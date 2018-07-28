@@ -19,7 +19,7 @@
                 <div id="songTitle">Demo</div>
                 <div id="buttons">
                     <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
-                    <button id="play" onclick="playOrPauseSong()"><img src="Pause.png"/></button>
+                    <button id="play" onclick="playOrPauseSong()"><img src="images/Pause.png"/></button>
                     <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
                 </div>
 
@@ -41,7 +41,7 @@
     <script type="text/javascript">
 
         var songs = ["Virtual Self - Ghost Voices.mp3","ARTY - Rain.mp3","ODESZA - Bloom.mp3"];
-        var poster = ["images/Poster1.jpg","Poster2.jpg","Poster3.jpg"];
+        var poster = ["images/Poster1.jpg","images/Poster2.jpg","images/Poster3.jpg"];
 
         var songTitle = document.getElementById("songTitle");
         var fillBar = document.getElementById("fill");
@@ -66,11 +66,11 @@
 
             if(song.paused){
                 song.play();
-                $("#play img").attr("src","Images/Pause.png");
+                $("#play img").attr("src","images/Pause.png");
             }
             else{
                 song.pause();
-                $("#play img").attr("src","Images/Play.png");
+                $("#play img").attr("src","images/Play.png");
             }
         }
 
@@ -116,7 +116,7 @@
                 currentSong = 0;
             }
             playSong();
-            $("#play img").attr("src","Images/Pause.png");
+            $("#play img").attr("src","images/Pause.png");
             $("#image img").attr("src",poster[currentSong]);
             $("#bg img").attr("src",poster[currentSong]);
         }
