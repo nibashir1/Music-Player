@@ -18,9 +18,9 @@
             <div id="player">
                 <div id="songTitle">Demo</div>
                 <div id="buttons">
-                    <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+                    <button id="pre" onclick="pre()"><img src="images/Pre.png" height="90%" width="90%"/></button>
                     <button id="play" onclick="playOrPauseSong()"><img src="images/Pause.png"/></button>
-                    <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+                    <button id="next" onclick="next()"><img src="images/Next.png" height="90%" width="90%"/></button>
                 </div>
 
                 <div id="progress-bar">
@@ -32,7 +32,7 @@
 
                 <div id="volume">
                   <button id="decrease" onclick="decreaseVolume()">-</button>
-                  <div id="volumeIcon"><img src="speaker.png"/></div>
+                  <div id="volumeIcon"><img src="images/speaker.png"/></div>
                   <button id="increase" onclick="increaseVolume()">+</button>
 
             </div>
@@ -40,7 +40,7 @@
     </body>
     <script type="text/javascript">
 
-        var songs = ["Virtual Self - Ghost Voices.mp3","ARTY - Rain.mp3","ODESZA - Bloom.mp3"];
+        var songs = ["music/Virtual Self - Ghost Voices.mp3","music/ARTY - Rain.mp3","music/ODESZA - Bloom.mp3"];
         var poster = ["images/Poster1.jpg","images/Poster2.jpg","images/Poster3.jpg"];
 
         var songTitle = document.getElementById("songTitle");
